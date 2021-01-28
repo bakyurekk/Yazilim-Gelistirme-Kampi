@@ -23,5 +23,5 @@ from Products
 left join [Order Details] on Products.ProductID = [Order Details].ProductID
 left join Orders on Orders.OrderID  = [Order Details].OrderID
 group by Products.ProductName
-order by SUM([Order Details].UnitPrice * [Order Details].Quantity) DESC
+order by sum([Order Details].UnitPrice * [Order Details].Quantity) desc
 
